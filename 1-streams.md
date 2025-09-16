@@ -56,6 +56,22 @@ while(true){
 input.close();
 ```
 
+## Stream value conversion
+
+```cpp
+bool z = cout; // Converted to a bool implicitly
+bool isGood = !cout.fail(); // Equivalent to the above line
+
+// in other words : 
+stream.fail() == !stream
+(stream >> value) == stream
+
+// so we could simplify reading data to :
+while(stream >> value){
+    // use value
+}
+```
+
 ## String Stream : **string** to **int**
 ```cpp
 #include <iostream>
@@ -78,22 +94,6 @@ using namespace std;
 stringstream outputStringStream;
 outputStringStream << kevinsFavoriteNumber;
 string stringRepresentation = outputStringStream.str();
-```
-
-## Stream value conversion
-
-```cpp
-bool z = cout; // Converted to a bool implicitly
-bool isGood = !cout.fail(); // Equivalent to the above line
-
-// in other words : 
-stream.fail() == !stream
-(stream >> value) == stream
-
-// so we could simplify reading data to :
-while(stream >> value){
-    // use value
-}
 ```
 
 ## Mixing >> and getline
