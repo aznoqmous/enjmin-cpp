@@ -59,7 +59,6 @@ input.close();
 ## String Stream : **string** to **int**
 ```cpp
 #include <iostream>
-#include <string>
 #include <sstream> // notice the dumb name
 using namespace std;
 
