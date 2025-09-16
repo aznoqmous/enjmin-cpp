@@ -3,7 +3,6 @@
 ## Print a value
 ```cpp
 #include <iostream>
-#include <string>
 using namespace std;
 
 cout << "Hello" << endl
@@ -13,7 +12,6 @@ cout << "My favorite number is :" << 31221 << endl
 ## Prompt a value
 ```cpp
 #include <iostream>
-#include <string>
 using namespace std;
 
 int value;
@@ -24,7 +22,6 @@ cin >> value;
 ```cpp
 #include <iostream>
 #include <fstream>
-#include <string>
 using namespace std;
 
 
@@ -103,7 +100,6 @@ while(stream >> value){
 ## Mixing >> and getline
 ```cpp
 #include <iostream>
-#include <string>
 using namespace std;
 
 int age;
@@ -122,7 +118,7 @@ cout << name << " - " << age << endl;
 | function | cout | cin
 |-|-|-
 | `endl` | insert a newline and flush the stream | -
-| `ws`   | - | skips all currently availablee whitespaces
+| `ws`   | - | skips all currently available whitespaces
 | `boolalpha` | print `true` or `false` for booleans | -
 | `hex` | print numbers in hexadecimal ||
 | `dec` | print numbers in decimal ||
