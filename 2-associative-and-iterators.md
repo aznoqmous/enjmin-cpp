@@ -1,6 +1,7 @@
 # Associative Container and Iterators
 
-## std::set
+## Associative containers
+### std::set
 ```cpp
 #include <iostream>
 #include <string>
@@ -20,7 +21,7 @@ groceryList.erase("a");
 cout << groceryList.count("a") << endl; // prints "0"
 ```
 
-## std::map
+### std::map
 ```cpp
 #include <iostream>
 #include <string>
@@ -35,7 +36,7 @@ myMap["foo"]++;
 cout << myMap["foor"] << endl; // prints "2"
 ```
 
-## std::pair
+### std::pair
 A pair is like a single collection element
 ```cpp
 pair<string, int> p;
@@ -43,7 +44,7 @@ p.first = "Cell phone";
 p.second = 33612310321;
 ```
 
-## std::multiset
+### std::multiset
 Multisets allow storing of multiple copies of an element
 ```cpp
 #include <iostream>
@@ -56,7 +57,7 @@ myMultiset.insert(3);
 cout << myMultiset.count(3) << endl; // prints "2"
 ```
 
-## std::multimap
+### std::multimap
 Multimap doesnt have a [] operator. Kind of a pairs-multiset.
 ```cpp
 #include <iostream>
@@ -70,7 +71,7 @@ myMultimap.insert(make_pair(3, 12));
 cout << myMultimap.count(3) << endl; // prints "2"
 ```
 
-## std::unordered_map
+### std::unordered_map
 Same as map but unsorted. Faster but uses more memory.
 ```cpp
 unordered_map<int, int> m;
