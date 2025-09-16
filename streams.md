@@ -116,3 +116,17 @@ getline(cin >> ws, name); // get first word from line
 
 cout << name << " - " << age << endl;
 ```
+
+## Stream Manipulators
+
+| function | cout | cin
+|-|-|-
+| `endl` | insert a newline and flush the stream | -
+| `ws`   | - | skips all currently availablee whitespaces
+| `boolalpha` | print `true` or `false` for booleans | -
+| `hex` | print numbers in hexadecimal ||
+| `dec` | print numbers in decimal ||
+| `oct` | print numbers in octal ||
+| `setprecision(x)` | adjust the precision numbers print with ||
+| `setw(x)` | output `x` times fill characters (see `setfill`, whitespace by default) | set the max input size (works well with `string`, `char[]`) |
+| `setfill(x)` | set the fill character used by `setw` |
