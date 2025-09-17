@@ -76,6 +76,11 @@ string& at(Tree &tree, size_t index)
 ## Const pointers
 
 ```cpp
+// take a pointer p toward an object :
+Widget* | p;
+--------|-------
+value   | target
+
 //constant pointer to a non-constant Widget
 // -> prevent changing pointer target, allows changing its value
 Widget* const p;
