@@ -1,4 +1,8 @@
 # Sequence containers
+- [Sequence containers](#sequence-containers)
+  - [std::stack](#stdstack)
+  - [std::vector](#stdvector)
+  - [std::deque](#stddeque)
 
 ## std::stack
 ```cpp

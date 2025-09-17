@@ -1,4 +1,14 @@
 # Streams
+- [Streams](#streams)
+  - [Print a value](#print-a-value)
+  - [Prompt a value](#prompt-a-value)
+  - [Write a file](#write-a-file)
+  - [Read a file](#read-a-file)
+  - [Stream value conversion](#stream-value-conversion)
+  - [String Stream : **string** to **int**](#string-stream--string-to-int)
+  - [String Stream : **string** to **int**](#string-stream--string-to-int-1)
+  - [Mixing \>\> and getline](#mixing--and-getline)
+  - [Stream Manipulators](#stream-manipulators)
 
 ## Print a value
 ```cpp
