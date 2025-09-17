@@ -1,5 +1,7 @@
 # enjmin-cpp
 
+![only when necessary](/assets/only-when-necessary.png)
+
 ## Jour 1
 - [Streams](/1-streams.md)
 ## Jour 2
