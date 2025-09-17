@@ -1,4 +1,12 @@
 # Objects and Namespaces
+- [Objects and Namespaces](#objects-and-namespaces)
+  - [Basic namespace](#basic-namespace)
+  - [Splitting namespaces](#splitting-namespaces)
+  - [Nested namespaces](#nested-namespaces)
+  - [using namespace](#using-namespace)
+  - [Scope resolution](#scope-resolution)
+  - [Static members and functions](#static-members-and-functions)
+  - [Nested Classes](#nested-classes)
 
 ## Basic namespace
 ```cpp
