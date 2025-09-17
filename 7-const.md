@@ -1,6 +1,13 @@
 # Const
+- [Const](#const)
+  - [Function parameters](#function-parameters)
+  - [Member functions](#member-functions)
+  - [Removing const](#removing-const)
+  - [Const and non const function implementations](#const-and-non-const-function-implementations)
+  - [Const pointers](#const-pointers)
+  - [Const iterators](#const-iterators)
+  - [nullptr](#nullptr)
 
-`const` allows us to reason about whether a variable will be changed.
 
 ## Function parameters
 Informs the final user that a given parameter won't be changed, without having to double check the function implementation
