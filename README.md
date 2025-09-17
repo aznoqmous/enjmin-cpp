@@ -9,3 +9,4 @@
 ## Jour 3
 - [Templates and Iterators](/5-templates-and-iterators.md)
 - [Algorithms](/6-algorithms.md)
+- [Const](/7-const.md)
