@@ -24,6 +24,9 @@ vector<int> v(n, k); // create an empty vector with n k
 v.push_back(k); // add k at the end of the vector
 v.pop_back(); // remove the last element of the vector 
 
+v.insert(i, k) // insert k before element at index i
+v.erase(i); // remove element at index i
+
 int size = v.size(); // get the vector size
 v.clear(); // clear the vector
 
