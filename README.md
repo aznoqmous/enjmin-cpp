@@ -10,3 +10,4 @@
 - [Templates and Iterators](/5-templates-and-iterators.md)
 - [Algorithms](/6-algorithms.md)
 - [Const](/7-const.md)
+- [Objects and Namespaces](/8-namespaces.md)
