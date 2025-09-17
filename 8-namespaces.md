@@ -106,8 +106,8 @@ class GlobalCounter
         static in numHours(){ return 24; }
 }
 
-GlobalCounter::count; // returns 0
-GlobalCounter::numHours(); // returns 24
+cout << GlobalCounter::count << endl; // prints "0"
+cout << GlobalCounter::numHours() << endl; // prints "24"
 ```
 
 ## Nested Classes
