@@ -13,3 +13,5 @@
 - [Algorithms](/6-algorithms.md)
 - [Const](/7-const.md)
 - [Objects and Namespaces](/8-namespaces.md)
+## Jour 4
+- [Memory](/9-memory.md)
