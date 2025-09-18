@@ -84,9 +84,12 @@ string& at(Tree &tree, size_t index)
 
 ```cpp
 // take a pointer p toward an object :
-Widget* | p;
+Widget  | *p;
 --------|-------
 value   | target
+
+// const applies from left to right (right to left if first in line)
+// -> preferably put const after type
 
 //constant pointer to a non-constant Widget
 // -> prevent changing pointer target, allows changing its value
@@ -94,13 +97,13 @@ Widget* const p;
 
 //non-constant pointer to a constant Widget
 // -> allows changing pointer target, prevent changing its value 
-const Widget* p; 
-Widget const* p;
+const Widget* p; // bad but ok
+Widget const* p; // good
 
 //constant pointer to a constant Widget
 // -> prevent changing the pointer target and its value
-const Widget* const p;
-Widget const* const p;
+const Widget* const p; // bad but ok
+Widget const* const p; // good
 ```
 
 ## Const iterators
