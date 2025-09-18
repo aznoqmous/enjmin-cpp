@@ -7,14 +7,14 @@
   - [Copy Constructors](#copy-constructors)
   - [Copy Assignment](#copy-assignment)
   - [Removing constructors](#removing-constructors)
+- [Bonus](#bonus)
+  - [Vector Constructors](#vector-constructors)
+  - [Default parameters](#default-parameters)
+  - [Most vexing parse](#most-vexing-parse)
   - [Preprocessor](#preprocessor)
     - [`#include`](#include)
     - [`#ifndef` / `#define` / `#endif`](#ifndef--define--endif)
     - [`#pragma once`](#pragma-once)
-  - [Bonus](#bonus)
-    - [Vector Constructors](#vector-constructors)
-    - [Default parameters](#default-parameters)
-    - [Most vexing parse](#most-vexing-parse)
 
 ## Initialization vs Assignment
 
@@ -173,6 +173,40 @@ class Vector {
 };
 ```
 
+Does the samething as the `#ifndef` / `#define` combo
+
+# Bonus
+## Vector Constructors
+```cpp
+// Initialize an empty vector:
+vector<int> a;
+// 42 elements: all zero
+vector<int> b(42);
+// 42 elements: all set to 11
+vector<int> c(42, 11);
+```
+
+## Default parameters
+In C++, a function can take default parameters, as long as they are defined in the **declaration** and not in the **definition**.
+```cpp
+// Declare our default arguments
+void f(int a, int b = 5, int c = 42);
+// Define our function
+void f(int a, int b, int c) {
+    cout << a << " ";
+    cout << b << " ";
+    cout << c << endl;
+}
+f(1); // 1 5 42
+f(1, 2); // 1 2 42
+f(1, 2, 3); // 1 2 3
+```
+
+## Most vexing parse
+```cpp
+int x(); //meant to do int x; or int x(2); 
+```
+
 ## Preprocessor
 **Preprocessor** is the first stage of the compiler and does **text manipulation**.  
 Preprocessor **directives** are prefaced by `#`.
@@ -193,36 +227,3 @@ Simply copy/paste the file content in place.
 ```
 
 ### `#pragma once`
-Does the samething as the `#ifndef` / `#define` combo
-
-## Bonus
-### Vector Constructors
-```cpp
-// Initialize an empty vector:
-vector<int> a;
-// 42 elements: all zero
-vector<int> b(42);
-// 42 elements: all set to 11
-vector<int> c(42, 11);
-```
-
-### Default parameters
-In C++, a function can take default parameters, as long as they are defined in the **declaration** and not in the **definition**.
-```cpp
-// Declare our default arguments
-void f(int a, int b = 5, int c = 42);
-// Define our function
-void f(int a, int b, int c) {
-    cout << a << " ";
-    cout << b << " ";
-    cout << c << endl;
-}
-f(1); // 1 5 42
-f(1, 2); // 1 2 42
-f(1, 2, 3); // 1 2 3
-```
-
-### Most vexing parse
-```cpp
-int x(); //meant to do int x; or int x(2); 
-```
