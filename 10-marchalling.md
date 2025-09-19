@@ -135,14 +135,6 @@ public static extern void DeleteCPerson(IntPtr cp);
     CallingConvention = CallingConvention.ThisCall
 )]
 public static extern void PrintCPerson(IntPtr this);
-
-[DllImport(
-    "lib.dll", 
-    EntryPoint = "?Print@CPerson@@QAEXXZ", 
-    CharSet = CharSet.Unicode, 
-    CallingConvention = CallingConvention.ThisCall
-)]
-public static extern void PrintCPerson(IntPtr this);
 ```
 - `CharSet` is used to define the encodage of string, not used yet
 - `CallingConvention` is used to define the calling convention, here we use the `ThisCall` which includes the implicit pointer `this`
