@@ -1,4 +1,12 @@
 # Marchalling
+- [Marchalling](#marchalling)
+  - [Definition](#definition)
+    - [Mangling](#mangling)
+  - [C++ with C#](#c-with-c)
+  - [Using dll from C#](#using-dll-from-c)
+    - [Call function](#call-function)
+    - [Use class](#use-class)
+      - [Passing string parameters](#passing-string-parameters)
 
 ## Definition
 Converting data in memory (like a C++ object) into a format that can be stored or sent somewhere else, and then turning it back later.
