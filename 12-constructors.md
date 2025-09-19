@@ -28,6 +28,7 @@
 ```cpp
 // Default constructors
 Widget x;
+Vector *y = new Vector();
 
 // Copy constructors
 Widget y(x);
@@ -54,6 +55,12 @@ class Vector {
 Vector x;
 Vector *y = new Vector();
 
+```
+
+### Most vexing parse
+The following code is actually a function declaration
+```cpp
+int x(); //meant to do int x; or int x(2);
 ```
 
 ## Initialization lists
@@ -102,8 +109,7 @@ int main() {
 ```
 
 ## Copy Constructors
-A copy constructor is called when an instance of a type is constructed from
-another instance.  
+A copy constructor is called when an instance of a type is constructed from another instance.  
 
 ```cpp
 class Vector {
@@ -173,8 +179,6 @@ class Vector {
 };
 ```
 
-Does the samething as the `#ifndef` / `#define` combo
-
 # Bonus
 ## Vector Constructors
 ```cpp
@@ -202,11 +206,6 @@ f(1, 2); // 1 2 42
 f(1, 2, 3); // 1 2 3
 ```
 
-## Most vexing parse
-```cpp
-int x(); //meant to do int x; or int x(2); 
-```
-
 ## Preprocessor
 **Preprocessor** is the first stage of the compiler and does **text manipulation**.  
 Preprocessor **directives** are prefaced by `#`.
@@ -227,3 +226,4 @@ Simply copy/paste the file content in place.
 ```
 
 ### `#pragma once`
+Does the samething as the `#ifndef` / `#define` combo

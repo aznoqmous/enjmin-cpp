@@ -61,7 +61,7 @@ void CPerson::Print(){
 
 // Factory
 extern "C" __declspec(dllexport)
-CPerson* CPersonNew ( {
+CPerson* CPersonNew () {
     return new CPerson("Buendia", "Axel");
 }
 
